@@ -17,10 +17,7 @@
  */
 package org.jboss.pnc.pncmetrics.rest;
 
-import com.codahale.metrics.Meter;
-import com.codahale.metrics.MetricRegistry;
-import com.codahale.metrics.Timer;
-import org.jboss.pnc.pncmetrics.MetricsCDIConfiguration;
+import java.io.IOException;
 
 import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
@@ -29,7 +26,12 @@ import javax.ws.rs.container.ContainerRequestFilter;
 import javax.ws.rs.container.ContainerResponseContext;
 import javax.ws.rs.container.ContainerResponseFilter;
 import javax.ws.rs.ext.Provider;
-import java.io.IOException;
+
+import org.jboss.pnc.pncmetrics.MetricsCDIConfiguration;
+
+import com.codahale.metrics.Meter;
+import com.codahale.metrics.MetricRegistry;
+import com.codahale.metrics.Timer;
 
 @Provider
 public class GeneralRestMetricsFilter implements ContainerRequestFilter, ContainerResponseFilter {
