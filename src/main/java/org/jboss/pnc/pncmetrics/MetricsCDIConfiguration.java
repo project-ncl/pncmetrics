@@ -17,6 +17,16 @@
  */
 package org.jboss.pnc.pncmetrics;
 
+import java.net.InetSocketAddress;
+import java.util.concurrent.TimeUnit;
+
+import javax.annotation.PostConstruct;
+import javax.enterprise.context.ApplicationScoped;
+
+import org.jboss.pnc.pncmetrics.exceptions.NoPropertyException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.codahale.metrics.MetricFilter;
 import com.codahale.metrics.MetricRegistry;
 import com.codahale.metrics.graphite.Graphite;
@@ -30,14 +40,6 @@ import io.github.mweirauch.metrics.jvm.extras.FileDescriptorCountGauge;
 import io.github.mweirauch.metrics.jvm.extras.ProcessMemoryUsageGaugeSet;
 import io.github.mweirauch.metrics.jvm.extras.UptimeGauge;
 import lombok.Getter;
-import org.jboss.pnc.pncmetrics.exceptions.NoPropertyException;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import javax.annotation.PostConstruct;
-import javax.enterprise.context.ApplicationScoped;
-import java.net.InetSocketAddress;
-import java.util.concurrent.TimeUnit;
 
 @ApplicationScoped
 public class MetricsCDIConfiguration {

@@ -1,12 +1,12 @@
 package org.jboss.pnc.pncmetrics;
 
-import com.codahale.metrics.MetricRegistry;
-import lombok.Getter;
-import org.jboss.pnc.pncmetrics.exceptions.NoPropertyException;
-
 import javax.ejb.Singleton;
 import javax.ejb.Startup;
 import javax.inject.Inject;
+
+import org.jboss.pnc.pncmetrics.exceptions.NoPropertyException;
+
+import com.codahale.metrics.MetricRegistry;
 
 /**
  * used to inject in EJBs
