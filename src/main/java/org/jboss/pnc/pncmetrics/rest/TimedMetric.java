@@ -17,11 +17,12 @@
  */
 package org.jboss.pnc.pncmetrics.rest;
 
-import javax.ws.rs.NameBinding;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
+
+import javax.ws.rs.NameBinding;
 
 /**
  * Annotate this to any REST method to get a timer and request rate of the particular method reported
