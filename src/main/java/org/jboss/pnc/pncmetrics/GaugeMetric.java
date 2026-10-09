@@ -1,10 +1,10 @@
 package org.jboss.pnc.pncmetrics;
 
-import com.codahale.metrics.Gauge;
-import com.codahale.metrics.MetricRegistry;
-
 import java.util.HashMap;
 import java.util.Map;
+
+import com.codahale.metrics.Gauge;
+import com.codahale.metrics.MetricRegistry;
 
 /**
  * Class to help deal with Gauge Metrics, which is an instantaneous measurement of a value
