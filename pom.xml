@@ -10,7 +10,7 @@
 
   <groupId>org.jboss.pnc.metrics</groupId>
   <artifactId>pncmetrics</artifactId>
-  <version>4.0.0-SNAPSHOT</version>
+  <version>4.0.0</version>
   <packaging>jar</packaging>
 
   <name>PNC Metrics</name>
@@ -36,7 +36,7 @@
   <scm>
     <connection>scm:git:https://github.com/project-ncl/pncmetrics.git</connection>
     <developerConnection>scm:git:git@github.com:project-ncl/pncmetrics.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>4.0.0</tag>
     <url>https://github.com/project-ncl/pncmetrics/</url>
   </scm>
 
