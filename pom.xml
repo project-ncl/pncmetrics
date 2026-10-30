@@ -13,6 +13,7 @@
   <version>4.0.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
+  <name>PNC Metrics</name>
   <description>Java EE project for Metrics</description>
   <url>https://github.com/project-ncl</url>
   <inceptionYear>2018</inceptionYear>
